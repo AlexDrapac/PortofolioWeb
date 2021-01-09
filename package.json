@@ -1,0 +1,22 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexDrapac/Portofolio.git"
+  },
+  "author": "Alex Drapac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexDrapac/Portofolio/issues"
+  },
+  "homepage": "https://github.com/AlexDrapac/Portofolio#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

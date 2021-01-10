@@ -1,0 +1,42 @@
+//*****Imports******//
+
+@import 'variables.scss';
+@import 'aside-navbar.scss';
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"); //Icons
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap'); //Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rubik:wght@500;700;900&display=swap'); // Logo Font
+
+//*****General Style******//
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+::before, :after {
+    box-sizing: border-box;
+}
+
+// Section
+.main-content {
+    padding-left: 270px;
+    
+    .section {
+        background-color: $light-bg-color-d;
+        min-height: 100vh;
+        display: block;
+    }
+}
+

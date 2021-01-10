@@ -1,0 +1,145 @@
+
+//*****Aside Navbar******//
+
+.aside {
+    width: 270px;
+    background-color: $light-bg-color-l;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-right: 1px solid $light-border-l;
+    padding: 30px;
+
+    .nav-toggler {
+        height: 40px;
+        width: 45px;
+        border: 1px solid #d4d4e3;
+        cursor: pointer;
+        position: fixed;
+        left: 300px;
+        top: 30px;
+        z-index: 11;
+        border-radius: 5px;
+        background-color: $light-bg-color-l;
+        // display: -ms-flexbox;
+        // display: flex;
+        display: none;
+        align-items: center;
+        -ms-flex-align: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        span {
+           height: 2px;
+           width: 18px;
+           display: inline-block; 
+           background-color:$pink;
+           position: relative;
+
+           &::before {
+               content: '';
+               height: 2px;
+               width: 18px;
+               position: absolute;
+               top: -6px;
+               left: 0;
+               background-color:$pink;
+           }
+           
+           &::after {
+               content: '';
+               height: 2px;
+               width: 18px;
+               position: absolute;
+               top: 6px;
+               left: 0;
+               background-color:$pink;
+           }
+        }
+    }
+
+    .logo { 
+        padding: 100px 0px 30px 25px;
+        
+        a {
+            font-size: 40px;
+            color: $light-heading-color;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            padding:0 10px;
+            line-height: 50px;
+
+            &::before {
+                content: '';
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-top: 4px solid $pink;
+                border-left: 4px solid $pink;
+            }
+
+            &::after {
+                content: '';
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                border-bottom: 4px solid $pink;
+                border-right: 4px solid $pink;
+            }
+        }
+    }
+
+    .nav {
+        list-style: none;
+        margin: 80px 0;
+        padding: 0;
+        padding: 70px 0px 0px 0px;
+
+        li {
+            display: block;
+
+            a {
+                font-size: 16px;
+                font-weight: 600;
+                color: $light-heading-color;
+                text-decoration: none;
+                line-height: 45px;
+                display: block;
+                border-bottom: 1px solid $light-border-l;
+                -webkit-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+
+                &:not(.active):hover {
+                    padding-left: 8px;    
+                    color: $pink;           
+                }
+               
+                &.active {
+                    color: $pink;
+                }
+
+                .fa {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .copyright-text {
+        padding: 150px 0px 0px 0px;
+        font-size: 13px;
+        color: #7d7d7d;
+    }
+
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,188 @@
+ 
+//*****About Page******//
+
+ .section {
+     .container {
+         padding-top: 60px;
+         padding-bottom: 70px;
+
+
+         .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            position: relative;
+         }
+
+         .section-title {
+             -ms-flex: 0 0 100%;
+             flex: 0 0 100%;
+             max-width: 100%;
+             margin-bottom: 60px;
+
+
+             h2 {
+                font-size: 40px;
+                color: $light-heading-color;
+                font-family: 'Rubik', sans-serif;
+                font-weight: 700;
+                margin: 0;   
+                position: relative;
+                
+                &::before{
+                    content: '';
+                    height: 4px;
+                    width: 50px;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background-color: $pink;
+                    
+                }
+               
+                &::after{
+                    content: '';
+                    height: 4px;
+                    width: 25px;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background-color: $pink;
+                    margin-top: 8px;
+                }
+             }
+         }
+     }
+ }
+
+ .about {
+  
+     .about-content {
+         -ms-flex: 0 0 100%;
+         flex: 0 0 100%;
+         max-width: 100%;
+
+         .margin-top {
+             margin-top: 20px;
+         }
+
+         .personal-info {
+            // background-color: red;
+            -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+            max-width: 60%;
+            margin-top: 40px;
+            
+            .buttons {
+                margin-top: 30px;
+
+                .btn {
+                    margin-right: 20px;
+                    margin-top: 20px;
+                }
+            }
+
+            .info-item {
+                
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%;
+
+                p {
+                    font-weight: 600;
+                    padding:12px 0;
+                    font-size: 16px;
+                    color: #302e4d;
+                    margin: 0;
+                    border-bottom: 2px solid $light-border-l;
+
+                    span {
+                        font-weight: 400;
+                        color: $light-text-color;
+                        margin-left: 4px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+
+        .skills {
+            // background-color: blue;
+            -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+            max-width: 40%;
+            margin-top: 40px;
+
+            .skill-item {
+                -ms-flex: 0 0 100%;
+                max-width: 100%;
+                flex: 0 0 100%;
+                margin-bottom: 20px;
+
+                h5{
+                    line-height: 24px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #302e4d;       
+                    text-transform: capitalize;    
+                    margin: 0;        
+                }
+
+                .progress {
+                    background-color: #e3e3e3;
+                    height: 8px;
+                    border-radius: 4px;
+                    width: 100%;
+                    position: relative;
+                }
+
+                .progress-in {
+                    position: absolute;
+                    border-radius: 4px;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    background-color: $pink;
+                }
+
+                .skill-procent {
+                    line-height: 20px;
+                    position: absolute;
+                    right: 0;
+                    top: -20px;
+                    color: #302e4d;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .about-text {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            h3{
+                font-size: 24px;
+                margin-bottom: 15px;
+                font-weight: 700;
+                color: #302e4d;
+
+                span {
+                    color: $pink;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 25px;
+                color: $light-text-color;
+                margin: 0;
+            }
+        }
+     }
+ }
+
+ 

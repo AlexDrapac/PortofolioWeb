@@ -1,14 +1,13 @@
 //*****Imports******//
-
 @import 'variables.scss';
-@import 'aside-navbar.scss';
+
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"); //Icons
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap'); //Fonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rubik:wght@500;700;900&display=swap'); // Logo Font
+//*****Imports End******//
+
 
 //*****General Style******//
-
-
 * {
     margin: 0;
     padding: 0;
@@ -29,14 +28,115 @@ body {
     box-sizing: border-box;
 }
 
+.padd-15 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+input,textarea,select {
+    font-family: 'Montserrat', sans-serif;
+}
+
 // Section
+
+
+
 .main-content {
-    padding-left: 270px;
+    // padding-left: 270px;
     
     .section {
         background-color: $light-bg-color-d;
         min-height: 100vh;
         display: block;
+        padding: 0 30px;
+        position: fixed;
+        left: 270px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        opacity: 1;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        
+
+        .container {               
+            max-width: 1100px;
+            width: 100%;
+            margin: auto;
+        }
     }
 }
 
+.section.back-section {
+    z-index: 1;
+}
+
+.section.active {
+    opacity: 1;
+    z-index: 2;
+    -webkit-animation: slideSection 1s ease;
+    animation: slideSection 1s ease;
+}
+
+@-webkit-keyframes slideSection {
+    0%{
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100%{
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideSection {
+    0%{
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100%{
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+.hidden {
+    display: none!important;
+}
+
+.btn {
+    background-color: $pink;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: #ffffff;
+    border-radius: 40px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+//*****General Style End******//
+
+
+//*****Imports SCSS******//
+@import 'aside-navbar.scss';
+@import 'intro-page.scss';
+@import 'about-page.scss';
+@import 'services-page.scss';
+@import 'projects-page.scss';
+@import 'contact-page.scss';
+@import 'dark-mode.scss';
+@import 'responsive.scss';
+//*****Imports SCSS End******//

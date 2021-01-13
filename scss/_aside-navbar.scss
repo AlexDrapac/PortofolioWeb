@@ -11,6 +11,8 @@
     z-index: 10;
     border-right: 1px solid $light-border-l;
     padding: 30px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 
     .nav-toggler {
         height: 40px;
@@ -19,7 +21,7 @@
         cursor: pointer;
         position: fixed;
         left: 300px;
-        top: 30px;
+        top: 20px;
         z-index: 11;
         border-radius: 5px;
         background-color: $light-bg-color-l;
@@ -30,6 +32,8 @@
         -ms-flex-align: center;
         -ms-flex-pack: center;
         justify-content: center;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
 
         span {
            height: 2px;
@@ -117,6 +121,7 @@
                 border-bottom: 1px solid $light-border-l;
                 -webkit-transition: all 0.3s ease;
                 transition: all 0.3s ease;
+                text-transform: capitalize;
 
                 &:not(.active):hover {
                     padding-left: 8px;    
@@ -135,11 +140,27 @@
     }
 
     .copyright-text {
-        padding: 150px 0px 0px 0px;
+        padding: 100px 0px 0px 0px;
         font-size: 13px;
         color: #7d7d7d;
     }
 
     justify-content: center;
     align-items: center;
+}
+
+.aside .nav-toggler.open span {
+    background-color: transparent;
+}
+
+.aside .nav-toggler.open span::before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0px;
+}
+
+.aside .nav-toggler.open span::after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 0px;
 }

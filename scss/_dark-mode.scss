@@ -1,0 +1,133 @@
+
+//*****Dark Mode******//
+
+.style-switcher {
+    position: fixed;
+    top: 20px;
+    right: 0;
+    z-index: 10;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid $light-border-d;
+    border-right: none;
+    border-radius: 0 0 0 5px;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+
+    .toggle-style-switcher {
+        position: absolute;
+        height: 45px;
+        width: 45px;
+        background: #ffffff;
+        top: -1px;
+        left: -46px;
+        border: 1px solid $light-border-d;
+        border-right:none;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px 0 0 5px;
+
+        .fa {
+            font-size: 20px;
+            line-height: 43px;
+        }
+    }
+
+    h5 {
+        font-size: 16px;
+        color: $light-heading-color;
+        margin-top: 0;
+        margin-bottom: 8px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $light-border-l;
+    }
+}
+
+.open {
+
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  
+    .toggle-style-switcher {
+        position: absolute;
+        height: 45px;
+        width: 45px;
+        background: #ffffff;
+        top: -1px;
+        left: -46px;
+        border: 1px solid $light-border-d;
+        border-right:none;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px 0 0 5px;
+
+        .fa {
+            font-size: 20px;
+            line-height: 43px;
+        }
+    }
+
+    h5 {
+        font-size: 16px;
+        color: $light-heading-color;
+        margin-top: 0;
+        margin-bottom: 8px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $light-border-l;
+    }
+}
+
+
+body.dark .section {
+    background-color: $dark-bg-color-d;
+}
+
+body.dark .aside {
+    background-color: $dark-bg-color-l;
+    .logo a,
+    .nav li a {
+        color: #ffffff;
+        border-color: $dark-border;
+    }
+}
+body.dark .aside .nav li a:hover,
+body.dark .aside .nav li a.active {
+    color: $pink;
+}
+
+body.dark .contact .contact-form .form-item .form-control,
+body.dark .service .service-item .service-item-inner {
+    background-color: $dark-bg-color-l;
+}
+
+
+body.dark .contact .contact-info-item h4,
+body.dark .service .service-item .service-item-inner h4,
+body.dark .about .about-content .skills .skill-item h5,
+body.dark .about-content .personal-info .info-item p,
+body.dark .about .about-content .about-text h3,
+body.dark section .container .section-title h2,
+body.dark .home .intro h1 {
+    color: #ffffff;
+}
+
+body.dark .contact .contact-form .form-item .form-control,
+body.dark .contact .contact-info-item p,
+body.dark .service .service-item .service-item-inner p,
+body.dark .about .about-content .skills .skill-item .skill-procent,
+body.dark .about .about-content .personal-info .info-item p span,
+body.dark .about-content .about-text p,
+body.dark .home .intro p {
+    color: $dark-text-color;
+}
+
+body.dark .aside,
+body.dark .contact .contact-form .form-item .form-control,
+body.dark .service .service-item .service-item-inner,
+body.dark .about .about-content .personal-info .info-item p {
+    border-color: $dark-border;
+}
+

@@ -1,0 +1,68 @@
+//*****Responsive******//
+
+@media (max-width: 1199px) {
+    
+    .aside .nav-toggler {
+        display: -ms-flexbox;
+        display: flex;
+        left: 30px;
+    }
+    .aside .nav-toggler.open{
+        left: 300px;
+    }
+
+    .aside {
+        left: -270px;
+    }
+    
+    .aside.open {
+        left: 0px;
+    }
+
+    .main-content .section.open {
+        left: 270px;
+    }
+
+    .main-content .section {
+        left: 0;
+    }
+
+    .about .about-content .personal-info .info-item p span {
+        display: block;
+        margin-left: 0;
+    }  
+}
+
+@media (max-width: 767px) {
+
+    .about .about-content .skills,
+    .about .about-content .personal-info {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .service .service-item {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+}
+
+@media (max-width: 675px) {
+
+    .contact .contact-form .col-6,
+    .contact .contact-info-item  {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 445px) {
+    .service .service-item,
+    .about .about-content .personal-info .info-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
